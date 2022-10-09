@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome CDN Links (icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main Style Css  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Navigation Bar with Bootstrap by Tolga Uğurlu</title>
+  </head>
+  <body>
+    <!-- Medium cihaz ve üzerinde elemanlar yan yana gelsin diye navbar-expand-md kullandım-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <i class="fa-sharp fa-solid fa-city"></i>
+        </a>
+
+        <!-- SMALL SCREEN İÇİN BİR BUTON OLUŞTURUYORUZ. -->
+
+        <!-- Buraya eklediğim button ile yapmak istediğim şey; mobile cihaza, yani medium break point'in altına indiği zaman bir icon gözüksün, bir buton oluşsun ve tıkladığımda menü o şekilde açılsın istiyorum.   -->
+
+        <!-- ************************************ -->
+
+        <!-- Verdiğimiz class özel bir class. Bu class ile üç çizgili bir buton oluşturuyoruz. -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          class
+          data-bs-toggle="collapse"
+          data-bs-target="#mobile"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <!--*****************************************-->
+
+        <!-- Navbar Oluşturuyoruz ve içerisine linkleri ekliyoruz.  -->
+
+        <!-- m-auto yani margin-auto diyerek sağ tarafa yaslanan nav itemlerimi ortaladım. Eğer me-auto deseydim tam ortaya değil, icona yakın olan sol tarafa ortalanacaktı. Ardından fs-5 yani font-size-5 diyerek boyutunu arttırdım. -->
+        <div id="mobile" class="collapse navbar-collapse">
+          <ul class="navbar-nav m-auto fs-5">
+            <li class="nav-item">
+              <!-- linklere ms-3 diyerek margin-left için bir boşluk bıraktım. -->
+              <a href="#" class="nav-link ms-3">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-3">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-3">Website</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

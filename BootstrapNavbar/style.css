@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-link {
+  color: white;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  color: aquamarine;
+  border-radius: 15px;
+  box-shadow: 2px 2px 25px white;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    text-align: center;
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .nav-link:hover {
+    text-align: center;
+    color: black;
+    border: none;
+    box-shadow: 2px black;
+  }
+}
